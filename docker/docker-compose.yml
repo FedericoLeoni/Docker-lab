@@ -123,6 +123,4 @@ networks:
 
 volumes:
   db_data:
-  portainer_data:
-  minio_data:
   crm:
