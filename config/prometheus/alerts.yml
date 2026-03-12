@@ -1,4 +1,7 @@
 groups:
+
+# generic system alerts (for exampe high CPU and full disk)
+
   - name: system_alerts
     interval: 15s
     rules:
@@ -29,11 +32,13 @@ groups:
           summary: "Disk usage > 80%"
           description: "Disk usage is above 80% for more than 1 minute."
 
+# Docker container alerts (container down > 60 seconds). Container data are collected by CAdvisor 
+
       - alert: ContainerDown
         expr: time() - container_last_seen > 60
-        for: 1m
+        for: 15s
         labels:
           severity: critical
         annotations:
-          summary: "Container {{ $labels.name }} is down"
-          description: "A container has not been seen for over 60 seconds."
+          summary: "Container down"
+          description: "Container has not been seen for over 60 seconds."

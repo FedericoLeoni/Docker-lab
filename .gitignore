@@ -1,0 +1,15 @@
+/db_data/
+/crm/
+/portainer_data/
+/loki/
+/grafana/
+
+*.env
+*.pid
+*.log
+*.sql
+/tmp/
+/var/tmp/
+
+*.secret
+data/*

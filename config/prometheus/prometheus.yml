@@ -1,5 +1,7 @@
 global:
-  scrape_interval: 15s
+  scrape_interval: 5s
+
+# Prometheus pulls system metrics from node-exporter and container metrics from cadvisor)
 
 scrape_configs:
   - job_name: node
@@ -10,9 +12,5 @@ scrape_configs:
       - targets: ['cadvisor:8080']
 
 rule_files:
-  - /mini-soc/config/prometheus/alerts.yml
+  - /docker-lab/config/prometheus/alerts.yml
 
-alerting:
-  alertmanagers:
-    - static_configs:
-        - targets: ['alertmanager:9093']
