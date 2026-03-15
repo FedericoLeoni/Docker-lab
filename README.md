@@ -1,7 +1,7 @@
 This project shows an infrastructure built with Docker where it runs:
-- a data collector and logs stack
-- metrics exposure services
-- an EspoCRM instance and MariaDB
+* a data collector and logs stack
+* metrics exposure services
+* an EspoCRM instance and MariaDB
 
 There is a backup script that backs up in a TrueNas instance in the same network.
 The script use rsync to estabilish connection between Truenas and mantain only the last three backups.
