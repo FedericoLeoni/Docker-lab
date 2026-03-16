@@ -4,7 +4,7 @@
 * an EspoCRM instance and MariaDB
 
 There is a backup script that backs up in a TrueNas instance in the same network.
-The script use rsync to estabilish connection between Truenas and mantain only the last three backups.
+The script use rsync to estabilish a connection between Truenas and keeps only the last three backups.
 
 **The containerized infrastructure contains:**
 
@@ -17,7 +17,7 @@ The script use rsync to estabilish connection between Truenas and mantain only t
 - Loki
 - Grafana
 
-**I should to read the wiki of the project to know more details about this lab!**
+**I should to read the wiki of the project for more details!**
 
 **Set-up the lab:**
 
