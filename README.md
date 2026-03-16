@@ -29,7 +29,7 @@ chown -R 65534:65534 ~/docker-lab/data/prometheus
 chown -R 10001:10001 ~/docker-lab/data/loki
 chown -R 472:472 ~/docker-lab/data/grafana
 cd docker
-# important: if you need, edit crm-app and crm-db environment variables in docker-compose.yml file
+# important: if needed, edit crm-app and crm-db environment variables in docker-compose.yml file
 docker network create frontend && docker network create backend && docker network create monitoring
 docker compose up -d
 
