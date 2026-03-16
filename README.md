@@ -22,7 +22,7 @@ The script use rsync to estabilish connection between Truenas and mantain only t
 **Set-up the lab:**
 
 ``` bash
-git clone https://github.com/FedericoLeoni/Docker-lab
+git clone https://github.com/FedericoLeoni/docker-lab
 cd docker-lab
 mkdir -p data/{grafana,prometheus,loki}
 cd docker
