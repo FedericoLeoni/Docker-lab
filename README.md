@@ -4,7 +4,7 @@
 * an EspoCRM instance and MariaDB
 
 There is a backup script that backs up in a TrueNas instance in the same network.
-The script use rsync to estabilish connection between Truenas and keeps only the last three backups.
+The script uses rsync to establish connection between Truenas and keeps only the last three backups.
 
 **The containerized infrastructure contains:**
 
